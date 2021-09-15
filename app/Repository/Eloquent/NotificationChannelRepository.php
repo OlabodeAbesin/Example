@@ -19,7 +19,7 @@ class NotificationChannelRepository extends BaseRepository implements EloquentRe
     /**
      * BaseRepository constructor.
      *
-     * @param Model $model
+     * @param User $model
      */
     public function __construct(NotificationChannel $model)
     {

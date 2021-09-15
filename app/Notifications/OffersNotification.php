@@ -33,9 +33,9 @@ class OffersNotification extends Notification
      */
     public function via($notifiable)
     {
-    $preferred_channel = $notifiable->preferredChannel();
+        $preferred_channel = $notifiable->preferredChannel();
         //This function returns highest ranked active channel
-        return ($preferred_channel) ? ['database', $preferred_channel ] : ['mail','database', 'pushy', TwilioChannel::class];
+        return ($preferred_channel) ? ['database'] : ['mail','database', 'pushy', TwilioChannel::class];
     }
 
     /**

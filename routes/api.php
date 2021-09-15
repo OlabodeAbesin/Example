@@ -20,7 +20,6 @@ Route::resource('users', UserController::class);
 Route::resource('notifications', NotificationController::class);
 
 
-//Use a group route
 
 Route::group(['prefix' => 'channels'], function () {
     Route::get('/', [NotificationController::class, 'channels']);

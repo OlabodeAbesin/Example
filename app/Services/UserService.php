@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Services;
 
 
+use App\Models\User;
 use App\Repository\Eloquent\UserRepository;
 use Illuminate\Database\Eloquent\Model;
 
@@ -19,7 +20,7 @@ class UserService {
 
     /**
      * @param $data
-     * @return Model|null
+     * @return User|null
      */
     public function store($data): ?Model
     {
