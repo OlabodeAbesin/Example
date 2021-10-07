@@ -1,4 +1,4 @@
-# TransferGo Backend Test
+# Example
 
 ### Overview
 The purpose of this service is to create a service that accepts the necessary information and sends a notification to customers.
@@ -39,4 +39,3 @@ Run below
 ```bash
 composer test
 ```
-# Transfergo
